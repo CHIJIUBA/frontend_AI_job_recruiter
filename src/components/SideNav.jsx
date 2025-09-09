@@ -18,14 +18,14 @@ function LabelInput({ label, inputId, handlerFunction }) {
   );
 }
 
-function LabelTextArea({ label, inputId, handlerFunction }) {
-  return (
-    <>
-      <label htmlFor={inputId}>{label}</label>
-      <textarea id={inputId} onInput={handlerFunction}></textarea>
-    </>
-  );
-}
+// function LabelTextArea({ label, inputId, handlerFunction }) {
+//   return (
+//     <>
+//       <label htmlFor={inputId}>{label}</label>
+//       <textarea id={inputId} onInput={handlerFunction}></textarea>
+//     </>
+//   );
+// }
 
 export function SideNav() {
   const [fullName, setPersonalDetails] = useState(personalDetails);
