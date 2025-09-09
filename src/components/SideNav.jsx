@@ -104,7 +104,6 @@ export function SideNav() {
             inputId={'emailInput'}
             handlerFunction={handlePersonalDetails}
           />
-          {/* some changes */}
         </div>
         <div className={'personaldetails'}>
           <h3>Personal Details</h3>
