@@ -78,26 +78,58 @@ export function SideNav() {
             inputId={'emailInput'}
             handlerFunction={handlePersonalDetails}
           />
-          {/* <LabelInput
-            label={'Phone Number'}
-            inputId={'phoneNumber'}
+        </div>
+        <div className={'personaldetails'}>
+          <h3>Personal Details</h3>
+          <LabelInput
+            label={'Full Name'}
+            inputId={'fullNameInput'}
             handlerFunction={handlePersonalDetails}
           />
           <LabelInput
-            label={'Address'}
-            inputId={'addressInput'}
+            label={'Email'}
+            inputId={'emailInput'}
+            handlerFunction={handlePersonalDetails}
+          />
+        </div>
+        <div className={'personaldetails'}>
+          <h3>Personal Details</h3>
+          <LabelInput
+            label={'Full Name'}
+            inputId={'fullNameInput'}
             handlerFunction={handlePersonalDetails}
           />
           <LabelInput
-            label={'Summary'}
-            inputId={'summaryInput'}
+            label={'Email'}
+            inputId={'emailInput'}
+            handlerFunction={handlePersonalDetails}
+          />
+        </div>
+        <div className={'personaldetails'}>
+          <h3>Personal Details</h3>
+          <LabelInput
+            label={'Full Name'}
+            inputId={'fullNameInput'}
             handlerFunction={handlePersonalDetails}
           />
           <LabelInput
-            label={'LinkedIn Profile'}
-            inputId={'linkedinput'}
+            label={'Email'}
+            inputId={'emailInput'}
             handlerFunction={handlePersonalDetails}
-          /> */}
+          />
+        </div>
+        <div className={'personaldetails'}>
+          <h3>Personal Details</h3>
+          <LabelInput
+            label={'Full Name'}
+            inputId={'fullNameInput'}
+            handlerFunction={handlePersonalDetails}
+          />
+          <LabelInput
+            label={'Email'}
+            inputId={'emailInput'}
+            handlerFunction={handlePersonalDetails}
+          />
         </div>
       </section>
       <ResumeBody
