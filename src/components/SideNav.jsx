@@ -99,6 +99,7 @@ export function SideNav() {
             inputId={'fullNameInput'}
             handlerFunction={handlePersonalDetails}
           />
+          {/* mic check one */}
           <LabelInput
             label={'Email'}
             inputId={'emailInput'}
