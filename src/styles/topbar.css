@@ -14,7 +14,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3366cc;
+  /* background-color: #3366cc; */
+  /* background-color: #5c85d6; */
+  /* background-color: #ff471a; */
+  background-color: white;
   padding: 10px;
   position: sticky;
   top: 0px;
@@ -24,7 +27,8 @@ body {
 .brand-title {
   display: flex;
   flex: 1;
-  color: #fff;
+  /* color: #fff; */
+  color: #4080bf;
   align-items: center;
   gap: 15px;
   margin-left: 50px;
@@ -177,8 +181,8 @@ label {
 .personaldetails {
   background-color: #fff;
   padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 25px;
+  border-radius: 0px;
+  margin-bottom: 2px;
 }
 
 .personaldetails h3 {
