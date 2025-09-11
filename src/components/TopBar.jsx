@@ -9,7 +9,7 @@ export function TopBar() {
         <span className={'brand-logo'}>
           <i className={'devicon-electron-original'}></i>
         </span>
-        <span className={'brand-name'}>RecruitAI</span>
+        <span className={'brand-name'}>Fast Api</span>
       </div>
       <a href={'#'} className={'toggle-button'}>
         <span className={'bar'}></span>

@@ -130,7 +130,8 @@ body {
 .maincontainer {
   display: flex;
   flex: 1;
-  padding: 10px 10px;
+  padding: 0px 5px;
+  border-top: 1px solid grey;
   gap: 2px;
   /* background-color: red; */
   background-color: #e6e6e6;
@@ -295,3 +296,9 @@ label {
 }
 
 /* end of the resume body styling */
+
+/* Begining of footer div */
+.footer {
+  height: 80px;
+}
+/* End of footer div */

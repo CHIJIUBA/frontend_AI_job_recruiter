@@ -8,6 +8,7 @@ function App() {
       <div className={'maincontainer'}>
         <SideNav />
       </div>
+      <div className="footer">this is the footer</div>
     </>
   );
 }
