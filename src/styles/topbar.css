@@ -132,11 +132,13 @@ body {
   flex: 1;
   padding: 10px 10px;
   gap: 2px;
+  /* background-color: red; */
+  background-color: #e6e6e6;
 }
 
 .side-nav {
   height: calc(100vh - 80px);
-  width: 30vw;
+  width: 35vw;
   overflow-y: scroll;
   scrollbar-color: gray #ebf0fa;
   scrollbar-width: thin;
@@ -207,7 +209,7 @@ label {
   background-color: #fff;
   border-radius: 0px;
   padding: 45px 65px;
-  width: 70vw;
+  width: 65vw;
   overflow-y: scroll;
   scrollbar-color: gray #ebf0fa;
   scrollbar-width: thin;
