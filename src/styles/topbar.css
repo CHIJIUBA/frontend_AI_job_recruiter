@@ -131,7 +131,7 @@ body {
   display: flex;
   flex: 1;
   padding: 10px 10px;
-  gap: 15px;
+  gap: 2px;
 }
 
 .side-nav {
