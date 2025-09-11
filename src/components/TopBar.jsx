@@ -28,9 +28,10 @@ export function TopBar() {
             <a href={'#'}></a>
           </li>
           <li>
-            <button className={'downloadButton'} onClick={printSpecificArea}>
+            {/* <button className={'downloadButton'} onClick={printSpecificArea}>
               Download Resume
-            </button>
+            </button> */}
+            <div className={'top-profile-pic'}>hello</div>
           </li>
         </ul>
       </div>
