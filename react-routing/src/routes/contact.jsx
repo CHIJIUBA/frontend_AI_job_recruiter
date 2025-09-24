@@ -1,9 +1,13 @@
-import { Form, useLoaderData } from 'react-router-dom';
-import { getContact } from '../contacts';
+import { Form, useLoaderData, redirect } from 'react-router-dom';
+import { getContact, deleteContact } from '../contacts';
 
 export async function loader({ params }) {
   const contact = await getContact(params.contactId);
   return { contact };
+}
+export async function action({ params }) {
+  await deleteContact(params.contactId);
+  return redirect('/');
 }
 
 export default function Contact() {

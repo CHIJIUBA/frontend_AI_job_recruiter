@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import Root, { loader as rootLoader, action as rootAction } from './routes/root';
 import ErrorPage from './error-page';
-import Contact, { loader as contactLoader } from './routes/contact';
+import Contact, { loader as contactLoader, action as deleteAction } from './routes/contact';
 import EditContact, { action as editAction } from './routes/edit';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
@@ -28,7 +28,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'contacts/:contactId/destroy',
-        element: <EditContact />
+        element: <Contact />,
+        loader: contactLoader,
+        action: deleteAction
       }
     ]
   }
