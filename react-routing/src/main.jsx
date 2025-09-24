@@ -4,6 +4,7 @@ import Root, { loader as rootLoader, action as rootAction } from './routes/root'
 import ErrorPage from './error-page';
 import Contact, { loader as contactLoader } from './routes/contact';
 import { action as deleteAction } from './routes/delete';
+import Index from './routes';
 import EditContact, { action as editAction } from './routes/edit';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
