@@ -1,7 +1,14 @@
 import { Form, useLoaderData, redirect, useFetcher } from 'react-router-dom';
 import { getContact, deleteContact, updateContact } from '../contacts';
+
 export async function loader({ params }) {
   const contact = await getContact(params.contactId);
+  if (!contact) {
+    throw new Response('', {
+      status: 404,
+      statusText: 'Not Found'
+    });
+  }
   return { contact };
 }
 
@@ -67,8 +74,11 @@ export default function Contact() {
 }
 
 function Favorite({ contact }) {
-  const favorite = contact.favorite;
   const fetcher = useFetcher();
+  const favorite = fetcher.formData
+    ? fetcher.formData.get('favorite') === 'true'
+    : contact.favorite;
+
   return (
     <fetcher.Form method="post">
       <button
