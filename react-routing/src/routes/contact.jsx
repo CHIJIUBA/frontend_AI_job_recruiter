@@ -1,4 +1,4 @@
-import { Form, useLoaderData, redirect } from 'react-router-dom';
+import { Form, useLoaderData, redirect, useFetcher } from 'react-router-dom';
 import { getContact, deleteContact } from '../contacts';
 
 export async function loader({ params }) {
@@ -62,8 +62,9 @@ export default function Contact() {
 
 function Favorite({ contact }) {
   const favorite = contact.favorite;
+  const fetcher = useFetcher();
   return (
-    <Form method="post">
+    <fetcher.Form method="post">
       <button
         name="favorite"
         value={favorite ? 'false' : 'true'}
@@ -71,6 +72,6 @@ function Favorite({ contact }) {
       >
         {favorite ? '★' : '☆'}
       </button>
-    </Form>
+    </fetcher.Form>
   );
 }
